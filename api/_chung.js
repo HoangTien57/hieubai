@@ -60,7 +60,19 @@ async function cauHinhAI() {
   return { khoa: bm.khoa || process.env.GEMINI_API_KEY || "", model: bm.model || process.env.GEMINI_MODEL || MODEL_MAC_DINH, tuBien: !bm.khoa && !!process.env.GEMINI_API_KEY };
 }
 
+// Gemini quá tải (503, 429, «high demand», «overloaded») thì tự thử lại, chờ 2 → 5 → 10 giây
 async function goiGemini(cauLenh, khoa, model) {
+  const cho = [2000, 5000, 10000];
+  for (let lan = 0; ; lan++) {
+    try { return await goiGeminiMotLan(cauLenh, khoa, model); } catch (e) {
+      const quaTai = e.tamThoi || /high demand|overloaded|try again later|unavailable|rate limit|quota/i.test(String(e.message));
+      if (!quaTai || lan >= cho.length) throw e;
+      await new Promise((ok) => setTimeout(ok, cho[lan]));
+    }
+  }
+}
+
+async function goiGeminiMotLan(cauLenh, khoa, model) {
   const r = await fetch("https://generativelanguage.googleapis.com/v1beta/models/" + encodeURIComponent(model) + ":generateContent", {
     method: "POST",
     headers: { "Content-Type": "application/json", "x-goog-api-key": khoa },
@@ -70,7 +82,7 @@ async function goiGemini(cauLenh, khoa, model) {
     }),
   });
   const j = await r.json().catch(() => ({}));
-  if (!r.ok) throw new Error((j.error && j.error.message) || "Gemini báo lỗi " + r.status);
+  if (!r.ok) { const e = new Error((j.error && j.error.message) || "Gemini báo lỗi " + r.status); e.tamThoi = r.status === 503 || r.status === 429 || r.status === 500; throw e; }
   const chu = (((j.candidates || [])[0] || {}).content || {}).parts || [];
   const kq = chu.map((p) => p.text || "").join("");
   if (!kq) throw new Error("Gemini không trả nội dung (có thể bị bộ lọc an toàn chặn). Thử lại hoặc đổi cách hỏi.");
