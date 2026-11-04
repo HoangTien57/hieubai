@@ -1,0 +1,8 @@
+# Bản sao lưu dữ liệu trên máy, file tạm, thư viện tải về
+db_sao_luu/
+__pycache__/
+*.pyc
+*.tmp
+node_modules/
+.vercel/
+.env*

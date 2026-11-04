@@ -1,0 +1,9 @@
+{
+  "routes": [
+    { "src": "/db/([a-z_]+)\\.js", "dest": "/api/db?bang=$1" },
+    { "handle": "filesystem" }
+  ],
+  "functions": {
+    "api/*.js": { "maxDuration": 60, "includeFiles": "db/**" }
+  }
+}

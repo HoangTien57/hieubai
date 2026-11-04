@@ -1,0 +1,323 @@
+# Khung chương trình lớp 10 dùng để dựng db/chuong_trinh.js (chạy cong_cu/dung_chuong_trinh.py).
+# @MÃ|Môn|Lớp|Nguồn      #Tên chương      số|Tên bài      (bài không có số: |Tên bài)
+# Đây là khung tạm, cần đối chiếu kế hoạch dạy học của trường. Sinh học 10 lấy nguyên từ dữ liệu đang có (giữ mã bài).
+
+@TO10|Toán|10|Khung tạm theo SGK Kết nối tri thức với cuộc sống — cần đối chiếu kế hoạch dạy học của trường
+#Chương I. Mệnh đề và tập hợp
+1|Mệnh đề
+2|Tập hợp và các phép toán trên tập hợp
+#Chương II. Bất phương trình và hệ bất phương trình bậc nhất hai ẩn
+3|Bất phương trình bậc nhất hai ẩn
+4|Hệ bất phương trình bậc nhất hai ẩn
+#Chương III. Hệ thức lượng trong tam giác
+5|Giá trị lượng giác của một góc từ 0° đến 180°
+6|Hệ thức lượng trong tam giác
+#Chương IV. Vectơ
+7|Các khái niệm mở đầu
+8|Tổng và hiệu của hai vectơ
+9|Tích của một vectơ với một số
+10|Vectơ trong mặt phẳng tọa độ
+11|Tích vô hướng của hai vectơ
+#Chương V. Các số đặc trưng của mẫu số liệu không ghép nhóm
+12|Số gần đúng và sai số
+13|Các số đặc trưng đo xu thế trung tâm
+14|Các số đặc trưng đo độ phân tán
+#Chương VI. Hàm số, đồ thị và ứng dụng
+15|Hàm số
+16|Hàm số bậc hai
+17|Dấu của tam thức bậc hai
+18|Phương trình quy về phương trình bậc hai
+#Chương VII. Phương pháp tọa độ trong mặt phẳng
+19|Phương trình đường thẳng
+20|Vị trí tương đối giữa hai đường thẳng. Góc và khoảng cách
+21|Đường tròn trong mặt phẳng tọa độ
+22|Ba đường conic
+#Chương VIII. Đại số tổ hợp
+23|Quy tắc đếm
+24|Hoán vị, chỉnh hợp và tổ hợp
+25|Nhị thức Newton
+#Chương IX. Tính xác suất theo định nghĩa cổ điển
+26|Biến cố và định nghĩa cổ điển của xác suất
+27|Thực hành tính xác suất theo định nghĩa cổ điển
+
+@NV10|Ngữ văn|10|Khung tạm theo các bài học của SGK Kết nối tri thức với cuộc sống, mỗi bài chia theo hoạt động — cần đối chiếu kế hoạch dạy học và văn bản cụ thể của trường
+=NGUVAN|Sức hấp dẫn của truyện kể;Vẻ đẹp của thơ ca;Nghệ thuật thuyết phục trong văn nghị luận;Sức sống của sử thi;Tích trò sân khấu dân gian;Nguyễn Trãi – «Dành còn để trợ dân này»;Quyền năng của người kể chuyện;Thế giới đa dạng của thông tin;Hành trang cuộc sống
+
+@TA10|Tiếng Anh|10|Khung tạm theo SGK Tiếng Anh 10 Global Success, mỗi Unit chia theo kĩ năng — cần đối chiếu kế hoạch dạy học của trường
+=TIENGANH|Family life;Humans and the environment;Music;For a better community;Inventions;Gender equality;Viet Nam and international organisations;New ways to learn;Protecting the environment;Ecotourism
+
+@VL10|Vật lí|10|Khung tạm theo SGK Kết nối tri thức với cuộc sống — cần đối chiếu kế hoạch dạy học của trường
+#Chương I. Mở đầu
+1|Làm quen với vật lí
+2|Các quy tắc an toàn trong phòng thực hành vật lí
+3|Thực hành tính sai số trong phép đo. Ghi kết quả đo
+#Chương II. Động học
+4|Độ dịch chuyển và quãng đường đi được
+5|Tốc độ và vận tốc
+6|Thực hành: Đo tốc độ của vật chuyển động
+7|Đồ thị độ dịch chuyển – thời gian
+8|Chuyển động biến đổi. Gia tốc
+9|Chuyển động thẳng biến đổi đều
+10|Sự rơi tự do
+11|Thực hành: Đo gia tốc rơi tự do
+12|Chuyển động ném
+#Chương III. Động lực học
+13|Tổng hợp và phân tích lực. Cân bằng lực
+14|Định luật 1 Newton
+15|Định luật 2 Newton
+16|Định luật 3 Newton
+17|Trọng lực và lực căng
+18|Lực ma sát
+19|Lực cản và lực nâng
+20|Một số ví dụ về cách giải các bài toán thuộc phần động lực học
+21|Moment lực. Cân bằng của vật rắn
+22|Thực hành: Tổng hợp lực
+#Chương IV. Năng lượng, công, công suất
+23|Năng lượng. Công cơ học
+24|Công suất
+25|Động năng, thế năng
+26|Cơ năng và định luật bảo toàn cơ năng
+27|Hiệu suất
+#Chương V. Động lượng
+28|Động lượng
+29|Định luật bảo toàn động lượng
+30|Thực hành: Xác định động lượng của vật trước và sau va chạm
+#Chương VI. Chuyển động tròn
+31|Động học của chuyển động tròn đều
+32|Lực hướng tâm và gia tốc hướng tâm
+#Chương VII. Biến dạng của vật rắn. Áp suất chất lỏng
+33|Biến dạng của vật rắn
+34|Khối lượng riêng. Áp suất chất lỏng
+
+@HH10|Hóa học|10|Khung tạm theo SGK Kết nối tri thức với cuộc sống — cần đối chiếu kế hoạch dạy học của trường
+#Chương 1. Cấu tạo nguyên tử
+1|Thành phần của nguyên tử
+2|Nguyên tố hóa học
+3|Cấu trúc lớp vỏ electron của nguyên tử
+4|Ôn tập chương 1
+#Chương 2. Bảng tuần hoàn các nguyên tố hóa học
+5|Cấu tạo của bảng tuần hoàn các nguyên tố hóa học
+6|Xu hướng biến đổi một số tính chất của nguyên tử các nguyên tố trong một chu kì và trong một nhóm
+7|Xu hướng biến đổi thành phần và một số tính chất của hợp chất trong một chu kì
+8|Định luật tuần hoàn. Ý nghĩa của bảng tuần hoàn các nguyên tố hóa học
+9|Ôn tập chương 2
+#Chương 3. Liên kết hóa học
+10|Quy tắc octet
+11|Liên kết ion
+12|Liên kết cộng hóa trị
+13|Liên kết hydrogen và tương tác van der Waals
+14|Ôn tập chương 3
+#Chương 4. Phản ứng oxi hóa – khử
+15|Phản ứng oxi hóa – khử
+16|Ôn tập chương 4
+#Chương 5. Năng lượng hóa học
+17|Biến thiên enthalpy trong các phản ứng hóa học
+18|Ôn tập chương 5
+#Chương 6. Tốc độ phản ứng
+19|Tốc độ phản ứng
+20|Ôn tập chương 6
+#Chương 7. Nguyên tố nhóm VIIA – Halogen
+21|Nhóm halogen
+22|Hydrogen halide. Muối halide
+23|Ôn tập chương 7
+
+=SINHHOC
+
+@LS10|Lịch sử|10|Khung tạm theo các chủ đề của Chương trình GDPT 2018 — số bài cần đối chiếu kế hoạch dạy học của trường
+#Chủ đề 1. Lịch sử và sử học
+1|Hiện thực lịch sử và nhận thức lịch sử
+2|Tri thức lịch sử và cuộc sống
+#Chủ đề 2. Vai trò của sử học
+3|Sử học với các lĩnh vực khoa học khác
+4|Sử học với một số lĩnh vực, ngành nghề hiện đại
+#Chủ đề 3. Một số nền văn minh thế giới thời kì cổ – trung đại
+5|Khái niệm văn minh. Một số nền văn minh phương Đông
+6|Một số nền văn minh phương Tây thời kì cổ – trung đại
+#Chủ đề 4. Các cuộc cách mạng công nghiệp trong lịch sử thế giới
+7|Các cuộc cách mạng công nghiệp thời kì cận đại
+8|Các cuộc cách mạng công nghiệp thời kì hiện đại
+#Chủ đề 5. Văn minh Đông Nam Á
+9|Cơ sở hình thành văn minh Đông Nam Á thời kì cổ – trung đại
+10|Hành trình phát triển và thành tựu của văn minh Đông Nam Á thời kì cổ – trung đại
+#Chủ đề 6. Một số nền văn minh trên đất nước Việt Nam (trước năm 1858)
+11|Một số nền văn minh cổ trên đất nước Việt Nam
+12|Văn minh Đại Việt
+#Chủ đề 7. Cộng đồng các dân tộc Việt Nam
+13|Các dân tộc trên đất nước Việt Nam
+14|Khối đại đoàn kết dân tộc trong lịch sử Việt Nam
+
+@DL10|Địa lí|10|Khung tạm theo nội dung Chương trình GDPT 2018 — số bài cần đối chiếu kế hoạch dạy học của trường
+#Một số vấn đề chung
+1|Môn Địa lí với định hướng nghề nghiệp
+2|Phương pháp biểu hiện các đối tượng địa lí trên bản đồ
+3|Sử dụng bản đồ trong học tập và đời sống; GPS và bản đồ số
+#Trái Đất
+4|Sự hình thành Trái Đất, vỏ Trái Đất và vật liệu cấu tạo vỏ Trái Đất
+5|Hệ quả địa lí các chuyển động chính của Trái Đất
+#Thạch quyển
+6|Thạch quyển, thuyết kiến tạo mảng
+7|Nội lực và ngoại lực
+#Khí quyển
+8|Khí quyển, nhiệt độ không khí
+9|Khí áp và gió
+10|Mưa
+#Thủy quyển
+11|Thủy quyển, nước trên lục địa
+12|Nước biển và đại dương
+#Thổ nhưỡng quyển và sinh quyển
+13|Đất và sinh quyển
+#Một số quy luật của vỏ địa lí
+14|Vỏ địa lí, quy luật thống nhất và hoàn chỉnh
+15|Quy luật địa đới và quy luật phi địa đới
+#Địa lí dân cư
+16|Dân số và gia tăng dân số. Cơ cấu dân số
+17|Phân bố dân cư và đô thị hóa
+#Các nguồn lực, một số tiêu chí đánh giá sự phát triển kinh tế
+18|Các nguồn lực phát triển kinh tế
+19|Cơ cấu kinh tế, tổng sản phẩm trong nước và tổng thu nhập quốc gia
+#Địa lí các ngành kinh tế
+20|Vai trò, đặc điểm, nhân tố ảnh hưởng đến nông nghiệp, lâm nghiệp, thủy sản
+21|Địa lí các ngành nông nghiệp, lâm nghiệp, thủy sản
+22|Tổ chức lãnh thổ nông nghiệp
+23|Vai trò, đặc điểm, cơ cấu, nhân tố ảnh hưởng đến công nghiệp
+24|Địa lí một số ngành công nghiệp
+25|Tổ chức lãnh thổ công nghiệp
+26|Vai trò, đặc điểm, cơ cấu, nhân tố ảnh hưởng đến dịch vụ
+27|Địa lí ngành giao thông vận tải và bưu chính viễn thông
+28|Địa lí ngành du lịch và tài chính – ngân hàng
+29|Thương mại
+#Phát triển bền vững và tăng trưởng xanh
+30|Môi trường và tài nguyên thiên nhiên
+31|Phát triển bền vững và tăng trưởng xanh
+
+@KP10|Giáo dục kinh tế và pháp luật|10|Khung tạm theo nội dung Chương trình GDPT 2018 — số bài cần đối chiếu kế hoạch dạy học của trường
+#Nền kinh tế và các chủ thể của nền kinh tế
+1|Nền kinh tế và các hoạt động của nền kinh tế
+2|Các chủ thể của nền kinh tế
+#Thị trường và cơ chế thị trường
+3|Thị trường
+4|Cơ chế thị trường
+#Ngân sách nhà nước và thuế
+5|Ngân sách nhà nước
+6|Thuế
+#Sản xuất kinh doanh và các mô hình sản xuất kinh doanh
+7|Sản xuất kinh doanh và các mô hình sản xuất kinh doanh
+#Tín dụng và cách sử dụng các dịch vụ tín dụng
+8|Tín dụng
+9|Dịch vụ tín dụng
+#Lập kế hoạch tài chính cá nhân
+10|Lập kế hoạch tài chính cá nhân
+#Hệ thống chính trị nước Cộng hòa xã hội chủ nghĩa Việt Nam
+11|Hệ thống chính trị nước Cộng hòa xã hội chủ nghĩa Việt Nam
+#Pháp luật nước Cộng hòa xã hội chủ nghĩa Việt Nam
+12|Pháp luật trong đời sống xã hội
+13|Hệ thống pháp luật và văn bản pháp luật Việt Nam
+14|Thực hiện pháp luật
+#Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam
+15|Giới thiệu về Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam
+16|Nội dung cơ bản của Hiến pháp về chế độ chính trị
+17|Nội dung cơ bản của Hiến pháp về quyền con người, quyền và nghĩa vụ cơ bản của công dân
+18|Nội dung cơ bản của Hiến pháp về kinh tế, văn hóa, giáo dục, khoa học, công nghệ và môi trường
+19|Nội dung cơ bản của Hiến pháp về bộ máy nhà nước
+#Bộ máy nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam
+20|Đặc điểm, nguyên tắc tổ chức và hoạt động của bộ máy nhà nước
+21|Quốc hội, Chủ tịch nước, Chính phủ
+22|Tòa án nhân dân và Viện kiểm sát nhân dân
+23|Chính quyền địa phương
+
+@TH10|Tin học|10|Khung tạm theo SGK Kết nối tri thức với cuộc sống — cần đối chiếu kế hoạch dạy học của trường
+#Chủ đề 1. Máy tính và xã hội tri thức
+1|Thông tin và xử lí thông tin
+2|Vai trò của thiết bị thông minh và tin học đối với xã hội
+3|Một số kiểu dữ liệu và dữ liệu văn bản
+4|Hệ nhị phân và dữ liệu số nguyên
+5|Dữ liệu lôgic
+6|Dữ liệu âm thanh và hình ảnh
+7|Thực hành sử dụng thiết bị số thông dụng
+#Chủ đề 2. Mạng máy tính và Internet
+8|Mạng máy tính trong cuộc sống hiện đại
+9|An toàn trên không gian mạng
+10|Thực hành khai thác tài nguyên trên Internet
+#Chủ đề 3. Đạo đức, pháp luật và văn hóa trong môi trường số
+11|Ứng xử trên môi trường số. Nghĩa vụ tôn trọng bản quyền
+#Chủ đề 4. Ứng dụng tin học
+12|Phần mềm thiết kế đồ họa
+13|Bổ sung các đối tượng đồ họa
+14|Làm việc với đối tượng đường và văn bản
+15|Hoàn thiện hình ảnh đồ họa
+#Chủ đề 5. Giải quyết vấn đề với sự trợ giúp của máy tính
+16|Ngôn ngữ lập trình bậc cao và Python
+17|Biến và lệnh gán
+18|Các lệnh vào ra đơn giản
+19|Câu lệnh rẽ nhánh if
+20|Câu lệnh lặp for
+21|Câu lệnh lặp while
+22|Kiểu dữ liệu danh sách
+23|Một số lệnh làm việc với dữ liệu danh sách
+24|Xâu kí tự
+25|Một số lệnh làm việc với xâu kí tự
+26|Hàm trong Python
+27|Tham số của hàm
+28|Phạm vi của biến
+29|Nhận biết lỗi chương trình
+30|Kiểm thử và gỡ lỗi chương trình
+31|Thực hành viết chương trình đơn giản
+32|Ôn tập lập trình Python
+#Chủ đề 6. Hướng nghiệp với tin học
+33|Nghề thiết kế đồ họa máy tính
+34|Nghề phát triển phần mềm
+
+@CN10|Công nghệ (Thiết kế và công nghệ)|10|Khung tạm theo nội dung Chương trình GDPT 2018 — số bài cần đối chiếu kế hoạch dạy học của trường
+#Đại cương về công nghệ
+1|Công nghệ và đời sống
+2|Hệ thống kĩ thuật
+3|Công nghệ phổ biến
+4|Một số công nghệ mới
+5|Đánh giá công nghệ
+6|Cách mạng công nghiệp
+7|Ngành nghề kĩ thuật, công nghệ
+#Vẽ kĩ thuật
+8|Tiêu chuẩn trình bày bản vẽ kĩ thuật
+9|Hình chiếu vuông góc
+10|Mặt cắt và hình cắt
+11|Hình chiếu trục đo
+12|Hình chiếu phối cảnh
+13|Bản vẽ cơ khí
+14|Bản vẽ xây dựng
+15|Vẽ kĩ thuật với sự hỗ trợ của máy tính
+#Thiết kế kĩ thuật
+16|Khái quát về thiết kế kĩ thuật
+17|Quy trình thiết kế kĩ thuật
+18|Những yếu tố ảnh hưởng đến thiết kế kĩ thuật
+19|Nguyên tắc thiết kế kĩ thuật
+20|Phương tiện hỗ trợ thiết kế kĩ thuật
+21|Dự án: Thiết kế sản phẩm kĩ thuật
+
+@CT10|Công nghệ (Trồng trọt)|10|Khung tạm theo nội dung Chương trình GDPT 2018 — số bài cần đối chiếu kế hoạch dạy học của trường
+#Giới thiệu chung về trồng trọt
+1|Giới thiệu về trồng trọt
+2|Cây trồng và các yếu tố chính trong trồng trọt
+#Đất trồng
+3|Giới thiệu về đất trồng
+4|Sử dụng và cải tạo đất trồng
+#Phân bón
+5|Giới thiệu về phân bón
+6|Sử dụng và bảo quản phân bón
+7|Ứng dụng công nghệ trong sản xuất phân bón
+#Giống cây trồng
+8|Giới thiệu về giống cây trồng
+9|Nhân giống cây trồng
+10|Ứng dụng công nghệ trong chọn, tạo và nhân giống cây trồng
+#Phòng trừ sâu, bệnh hại cây trồng
+11|Sâu, bệnh hại cây trồng
+12|Biện pháp phòng trừ sâu, bệnh hại cây trồng
+13|Ứng dụng công nghệ trong phòng trừ sâu, bệnh hại cây trồng
+#Kĩ thuật trồng trọt
+14|Quy trình trồng trọt
+15|Cơ giới hóa và ứng dụng công nghệ cao trong trồng trọt
+16|Thu hoạch, bảo quản và chế biến sản phẩm trồng trọt
+#Trồng trọt công nghệ cao
+17|Giới thiệu về trồng trọt công nghệ cao
+18|Hệ thống thủy canh và khí canh
+#Dự án trồng trọt
+19|Dự án trồng trọt
