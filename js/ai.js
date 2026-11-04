@@ -13,8 +13,17 @@ var AI = {
   goiAPI: function (cauLenh) {
     if (AI.coCauNoi()) {
       return fetch("/api/ai", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ cau_lenh: cauLenh }) })
-        .then(function (r) { return r.json(); })
-        .then(function (j) { if (j.loi) throw new Error(j.loi); return j.ket_qua; });
+        .then(function (r) {
+          return r.text().then(function (chu) {
+            var j = null;
+            try { j = JSON.parse(chu); } catch (e) { j = null; }
+            // Máy chủ trả trang lỗi thay vì dữ liệu: thường do lượt AI chạy quá thời gian cho phép
+            if (!j) throw new Error(r.status === 504 || /TIMEOUT|timed out/i.test(chu) ? "AI chạy quá thời gian cho phép. Em thử lại, hoặc giảm số câu của đề."
+              : "Máy chủ gặp lỗi (" + r.status + "). Em thử lại sau ít phút.");
+            if (j.loi) throw new Error(j.loi);
+            return j.ket_qua;
+          });
+        });
     }
     return Promise.reject(new Error("Chưa viết nhánh gọi API trong js/ai.js"));
   },

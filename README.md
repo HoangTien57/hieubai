@@ -27,12 +27,12 @@ api/                          hàm máy chủ Vercel
   ai.js                       POST /api/ai → Gemini
   cau-hinh.js                 GET/POST /api/cau-hinh → trạng thái AI, lưu khóa (chỉ admin; khóa không trả về trình duyệt)
   trang_thai.js               GET /api/trang_thai
-vercel.json                   chuyển /db/*.js sang api/db.js; giới hạn 60 giây mỗi hàm
+vercel.json                   chuyển /db/*.js sang api/db.js; giới hạn 300 giây mỗi hàm
 cong_cu/                      dựng khung chương trình lớp 10
 ```
 
 ## Lưu ý bản dùng thử
 - Ai có địa chỉ đều mở được trang và đọc dữ liệu; đăng nhập theo vai trò chỉ là lớp giao diện, PIN kiểm trên trình duyệt. **Chỉ dùng dữ liệu giả, không nhập thông tin học sinh thật.**
 - Người có địa chỉ có thể gọi AI và làm hết hạn mức của khóa Gemini miễn phí.
-- Mỗi lượt AI tối đa 60 giây (gói Hobby): nên tạo đề ≤ 20 câu.
+- Mỗi lượt AI tối đa 300 giây: đề rất nhiều câu vẫn có thể quá giờ, nên tạo đề ≤ 30 câu.
 - Nhiều người lưu cùng lúc có thể phải tải lại trang (chặn ghi đè theo cả kho).

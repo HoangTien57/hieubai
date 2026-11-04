@@ -4,6 +4,6 @@
     { "handle": "filesystem" }
   ],
   "functions": {
-    "api/*.js": { "maxDuration": 60, "includeFiles": "db/**" }
+    "api/*.js": { "maxDuration": 300, "includeFiles": "db/**" }
   }
 }
