@@ -10,8 +10,15 @@ const TIEN_TO = "hieubai/db/";
 const BI_MAT = "hieubai/bi_mat/";
 const MODEL_MAC_DINH = "gemini-2.5-flash";
 
+// Khóa Blob: Vercel đặt tên BLOB_READ_WRITE_TOKEN, hoặc <TIỀN TỐ>_BLOB_READ_WRITE_TOKEN nếu lúc nối kho có đặt tiền tố
+function khoaBlob() {
+  if (process.env.BLOB_READ_WRITE_TOKEN) return process.env.BLOB_READ_WRITE_TOKEN;
+  const ten = Object.keys(process.env).find((k) => /BLOB_READ_WRITE_TOKEN$/.test(k) && process.env[k]);
+  return ten ? process.env[ten] : "";
+}
+
 async function timBlob(ten) {
-  const { blobs } = await list({ prefix: ten, limit: 20 });
+  const { blobs } = await list({ prefix: ten, limit: 20, token: khoaBlob() });
   return blobs.filter((b) => b.pathname === ten || b.pathname.startsWith(ten))
     .sort((a, b) => new Date(b.uploadedAt) - new Date(a.uploadedAt))[0] || null;
 }
@@ -25,7 +32,7 @@ async function docChu(url) {
 
 async function docBang(bang) {
   if (!BANG.includes(bang)) throw new Error("Bảng không hợp lệ");
-  if (process.env.BLOB_READ_WRITE_TOKEN) {
+  if (khoaBlob()) {
     const b = await timBlob(TIEN_TO + bang + ".js");
     if (b) return docChu(b.url);
   }
@@ -35,7 +42,7 @@ async function docBang(bang) {
 async function ghiBang(bang, noiDung) {
   if (!BANG.includes(bang)) throw new Error("Bảng không hợp lệ");
   await put(TIEN_TO + bang + ".js", noiDung, {
-    access: "public", addRandomSuffix: false, allowOverwrite: true, contentType: "text/javascript; charset=utf-8", cacheControlMaxAge: 60,
+    access: "public", addRandomSuffix: false, allowOverwrite: true, contentType: "text/javascript; charset=utf-8", cacheControlMaxAge: 60, token: khoaBlob(),
   });
 }
 
@@ -46,16 +53,16 @@ function giaTriBang(chu, bang) {
 }
 
 async function docBiMat() {
-  if (!process.env.BLOB_READ_WRITE_TOKEN) return {};
+  if (!khoaBlob()) return {};
   const b = await timBlob(BI_MAT + "gemini");
   if (!b) return {};
   try { return JSON.parse(await docChu(b.url)); } catch (e) { return {}; }
 }
 
 async function ghiBiMat(obj) {
-  const { blobs } = await list({ prefix: BI_MAT, limit: 50 });
-  if (blobs.length) await del(blobs.map((b) => b.url));
-  await put(BI_MAT + "gemini.json", JSON.stringify(obj), { access: "public", addRandomSuffix: true, contentType: "application/json", cacheControlMaxAge: 60 });
+  const { blobs } = await list({ prefix: BI_MAT, limit: 50, token: khoaBlob() });
+  if (blobs.length) await del(blobs.map((b) => b.url), { token: khoaBlob() });
+  await put(BI_MAT + "gemini.json", JSON.stringify(obj), { access: "public", addRandomSuffix: true, contentType: "application/json", cacheControlMaxAge: 60, token: khoaBlob() });
 }
 
 async function cauHinhAI() {
@@ -87,4 +94,4 @@ async function laAdmin(ma, pin) {
   return !!(u && u.vai === "admin" && String(u.pin) === String(pin || "").trim());
 }
 
-module.exports = { BANG, docBang, ghiBang, giaTriBang, docBiMat, ghiBiMat, cauHinhAI, goiGemini, laAdmin };
+module.exports = { khoaBlob, BANG, docBang, ghiBang, giaTriBang, docBiMat, ghiBiMat, cauHinhAI, goiGemini, laAdmin };
