@@ -1,11 +1,11 @@
 // POST /api/luu {files: {bảng: nội dung file}, ban_goc} — ghi các bảng vào Blob.
 // Máy lưu sau mà chưa tải bản mới nhất (ban_goc khác mốc đang lưu) bị từ chối 409, không ghi đè việc của người khác.
-const { BANG, docBang, ghiBang, giaTriBang, khoaBlob } = require("./_chung");
+const { BANG, docBang, ghiBang, giaTriBang, coBlob } = require("./_chung");
 
 module.exports = async (req, res) => {
   res.setHeader("Cache-Control", "no-store");
   if (req.method !== "POST") { res.status(405).json({ loi: "Chỉ nhận POST" }); return; }
-  if (!khoaBlob()) { res.status(503).json({ loi: "Chưa bật Vercel Blob cho dự án nên chưa lưu được." }); return; }
+  if (!coBlob()) { res.status(503).json({ loi: "Chưa bật Vercel Blob cho dự án nên chưa lưu được." }); return; }
   const body = req.body || {};
   const files = body.files || {};
   const la = Object.keys(files).filter((b) => !BANG.includes(b));
