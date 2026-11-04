@@ -12,7 +12,7 @@ App luyện đề và ôn đúng chỗ hiểu sai, cho học sinh, giáo viên v
 ## Đưa lên Vercel
 1. vercel.com → **Add New → Project** → chọn repo này → **Deploy** (không cần framework, không cần lệnh build).
 2. Trong dự án: **Storage → Create → Blob** (Private hoặc Public đều được) → nối vào dự án → **Redeploy**. Kho Private dùng biến `BLOB_STORE_ID` (Vercel tự thêm khi nối).
-3. Mở web, đăng nhập Ban Khảo thí → **Cài đặt AI** → dán khóa Gemini (aistudio.google.com → Get API key) → **Thử gọi AI** → **Lưu**. Hoặc đặt biến môi trường `GEMINI_API_KEY` (tùy chọn `GEMINI_MODEL`, mặc định `gemini-2.5-flash`).
+3. Mở web, đăng nhập Ban Khảo thí → **Cài đặt AI** → dán khóa Gemini (aistudio.google.com → Get API key) → **Thử gọi AI** → **Lưu**. Hoặc đặt biến môi trường `GEMINI_API_KEY` (tùy chọn `GEMINI_MODEL`, mặc định `gemini-3.8-flash`).
 
 Tài khoản dùng thử: `ADMIN`/`2611`, `GV01`/`1111` (10A1), `GV02`/`2222` (10A2), học sinh `HS1001`–`HS1003` (10A1), `HS2001`–`HS2003` (10A2).
 

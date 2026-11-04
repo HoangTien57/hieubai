@@ -186,7 +186,7 @@ function vCaiDat() {
     h += '<div class="card ld-form"><h2>Gemini</h2><p>Trạng thái: ' + (c.co_khoa ? '<span class="pill d">Đã có khóa</span>' + (c.tu_bien ? ' (lấy từ biến môi trường trên Vercel)' : '') : '<span class="pill x">Chưa có khóa</span> — các nút AI chưa dùng được') + ' · Mô hình: <b>' + esc(c.model || "") + '</b></p>' +
       (c.luu_duoc ? '' : '<p class="warnline">Máy chủ chưa thấy kho Vercel Blob nên chưa lưu được khóa và dữ liệu. Kiểm tra: Storage → kho Blob → Projects đã nối dự án này, môi trường Production được tích, rồi Redeploy. Biến tìm thấy: ' + esc((c.bien_blob || []).join(", ") || "không có") + '</p>') +
       '<label class="f">Khóa API Gemini<input type="password" data-cd="khoa" autocomplete="off" placeholder="' + (c.co_khoa ? "Để trống nếu giữ khóa cũ" : "Dán khóa bắt đầu bằng AIza…") + '"></label>' +
-      '<label class="f">Mô hình<input data-cd="model" value="' + esc(c.model || "gemini-2.5-flash") + '"></label>' +
+      '<label class="f">Mô hình<input data-cd="model" value="' + esc(c.model || "gemini-3.8-flash") + '"></label>' +
       '<label class="f">Nhập lại PIN của Ban Khảo thí<input type="password" inputmode="numeric" data-cd="pin" autocomplete="off"></label>' +
       '<div class="row-btn"><button class="btn" data-cd-luu>Lưu</button><button class="btn ghost" data-cd-thu>Thử gọi AI</button>' + (c.co_khoa && !c.tu_bien ? '<button class="link danger" data-cd-xoa>Xóa khóa</button>' : '') + '</div><p class="small" data-cd-kq></p>' +
       '<p class="small muted">Khóa chỉ lưu ở máy chủ, không gửi về máy học sinh. Lấy khóa miễn phí ở aistudio.google.com → Get API key. Gói miễn phí có giới hạn số lượt mỗi phút, mỗi ngày.</p></div>';

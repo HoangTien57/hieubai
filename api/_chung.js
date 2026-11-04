@@ -8,7 +8,7 @@ const { put, get } = require("@vercel/blob");
 const BANG = ["meta", "chuong_trinh", "bai_ngoai", "lop", "ngan_hang", "thuat_ngu", "loi_tu_duy", "phien", "ket_qua", "de", "lam_de", "nguoi_dung", "giao"];
 const TIEN_TO = "hieubai/db/";
 const FILE_BI_MAT = "hieubai/bi_mat/gemini.json";
-const MODEL_MAC_DINH = "gemini-2.5-flash";
+const MODEL_MAC_DINH = "gemini-3.8-flash";
 
 // Kho Blob loại Private: chạy trên Vercel, thư viện tự đăng nhập bằng OIDC khi kho đã nối dự án (có BLOB_STORE_ID).
 // Có khóa BLOB_READ_WRITE_TOKEN (hoặc <TIỀN TỐ>_BLOB_READ_WRITE_TOKEN) thì dùng khóa đó.
